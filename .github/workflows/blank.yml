@@ -1,10 +1,10 @@
-name: CI
-on: push
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: my steps
-        run: echo "hello word"
+name: CI # nome integração continua
+on: push # ele envia as alterações para o reposeitorio
+jobs: #  ele axecuta
+  build: # ele constroi o restante dos repositorios
+    runs-on: ubuntu-latest # o servidor que vai rodar os testes 
+    steps: # adiciona os passos que o job deve fazer
+      - name: Checkout code # adiciona o nom 'checkout'
+        uses: actions/checkout@v2 # ele ativa o checkout@v2
+      - name: my steps # ele adiciona o nome ao steps
+        run: echo "hello word" # mostra a mensagem "hello word" S
